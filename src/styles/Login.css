@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   GLOBAL RESET (AMAN)
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   LOGIN PAGE ONLY
+========================= */
+
+/* background khusus login */
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  background: url("../assets/btp.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* box login */
+.wrapper form {
+  width: 420px;
+  max-width: 100%;
+
+  padding: 35px 40px;
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(35px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+
+  color: #074985;
+}
+
+/* title */
+.wrapper h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* input area */
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  margin: 22px 0;
+}
+
+/* input */
+.wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  outline: none;
+
+  border-radius: 40px;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+
+  font-size: 15px;
+
+  padding: 0 45px 0 18px;
+
+  transition: 0.25s ease;
+}
+
+.wrapper .input-box input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.12);
+}
+
+.wrapper .input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* icon */
+.wrapper .input-box .icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* remember / forgot */
+.wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 14px;
+  margin: -5px 0 18px;
+}
+
+.wrapper .remember-forget label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wrapper .remember-forget label input {
+  accent-color: #2563eb;
+}
+
+.wrapper .remember-forget a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper .remember-forget a:hover {
+  text-decoration: underline;
+}
+
+/* button */
+.wrapper button {
+  width: 100%;
+  height: 48px;
+
+  border: none;
+  outline: none;
+  border-radius: 40px;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.wrapper button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* register */
+.wrapper .register-link {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wrapper .register-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper .register-link a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  .wrapper form {
+    padding: 28px 22px;
+    border-radius: 16px;
+  }
+
+  .wrapper h1 {
+    font-size: 28px;
+  }
+
+  .wrapper .remember-forget {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
